@@ -1,0 +1,77 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: black;
+}
+
+.srodek {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    border:1px solid white;
+    background-color: Beige;
+    min-width: 70%;
+    min-height: 50%;
+    font-size:2vmax;
+    outline: 1px solid Beige;
+
+
+}
+
+.srodek > .TekstGłówny {
+    text-align: center;
+    font-size:1.5vmax;
+    border-top:0px;
+    margin:0;
+    margin-bottom: 1%;
+}
+
+.srodek > input {
+
+    width:70%;
+    height: 2%;
+    display: inline-block;
+
+
+    font-family: inherit;
+    padding: 0.25em 0.5em;
+
+    border: 2px solid black;
+    border-radius: 4px;
+    outline: none;
+}
+
+.srodek > input:valid {
+    background-color: yellow;
+}
+button {
+    display: inline;
+    height: 2%;
+
+    max-width: 60px;
+    max-height: 40px;
+    background-color: purple;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size:18px;
+    font-family: monospace;
+    color:black;
+
+    text-align: center;
+    cursor:pointer;
+}
+
+
+
+.srodek > #listaElementow {
+    padding-left:5%;
+    list-style-type: square;
+}
