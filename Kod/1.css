@@ -11,6 +11,8 @@ body {
 }
 
 .srodek {
+
+    max-width: 100%;
     position: fixed;
     
     top: 50%;
@@ -78,3 +80,19 @@ body {
     padding-left:5%;
     list-style-type: square;
 }
+
+
+
+li {
+    display:flex;
+    width:80%;
+    max-width: 1000px;
+}
+
+
+li:before {
+    content: "•";
+    margin-right:10px;
+}
+
+
