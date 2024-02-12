@@ -20,11 +20,15 @@ function Dodaj() {
     ptaszek.style.alignContent = "center"
     ptaszek.style.marginLeft = 'auto'
 
+    
 
+    input.value[0].toUpperCase()
 
     var node = document.createElement("li");
 
-    var textnode = document.createTextNode(input.value);
+    var inputFirstLetter = input.value.charAt(0).toUpperCase()
+    var inputRestLetters = input.value.slice(1);
+    var textnode = document.createTextNode(inputFirstLetter+inputRestLetters);
 
     var textnode1 = document.createElement("input");
     textnode1.checked = false;
@@ -45,6 +49,8 @@ function Dodaj() {
         
         
         node.remove()
+
+
         node.appendChild(textnode="");
         
     })
@@ -52,9 +58,14 @@ function Dodaj() {
 
     ptaszek.addEventListener("click", () => {
 
-        textnode1.checked = true;
+        if(textnode1.checked==false) {
+            return textnode1.checked = true
+        } else {
+            return textnode1.checked = false;
+        }
+        
 
-        node.appendChild(textnode="");
+
 
 
 
@@ -66,3 +77,8 @@ function Dodaj() {
 
 }
 
+
+
+function Usun() {
+    node.remove()
+}
