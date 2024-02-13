@@ -45,14 +45,24 @@
 
             <input id="input" name="Elementy" type="text" width="300px" placeholder="Dodaj produkty...">  
 
-            <button id="buttonRemove" onclick="Dodaj()">➕</button> <button id="buttonRemove" onclick="Usun()">❌</button><br> 
+            <button id="buttonRemove" onsubmit="Dodaj(); return false" onclick="Dodaj()">➕</button> 
+            <button id="buttonRemove" onclick="DeleteTxt()">❌</button>
+            <!-- <button id="buttonRemove" id="ButtonRemoveId" onclick="Delete()">🗑</button><br>  -->
+
 
             <p class="TekstGłówny">Lista zakupów</p>
 
             <ul id="listaElementow">
      
-                
+
             </ul>
+
+        <script>
+        document.body.onkeydown = function(e) {
+            if (e.keyCode==13) 
+            Dodaj();
+        };
+         </script>
         </div>
             
     </body>
