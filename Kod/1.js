@@ -1,3 +1,5 @@
+input.value = "FrFrFrFrFrFrFrFrFrFrFrFrFrFrFrFrFrFrFrFrFrFrFrFrFrFFrFrrFrFrFFrFrFrrFrFrFr"
+
 function Dodaj() {
     const button = document.createElement('button');
     
@@ -85,8 +87,5 @@ function DeleteTxt() {
 }
 
 function Delete() {
-    document.getElementById("listaElementow").removeChild(none);
-
-    document.getElementById("listaElementow").re
-
+    document.getElementById("listaElementow").innerHTML = "";
 }
