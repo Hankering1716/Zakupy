@@ -11,18 +11,17 @@ body {
 }
 
 .srodek {
-    margin: auto;
-    max-width: 100%;
+
     position: fixed;
-    
     overflow:auto;
 
     left:50%;
     top:0;
     transform: translate(-50%);
 
-    background-color: Beige;
-    width: 70%;
+
+    background-color: Beige;   
+    width:80%;
     height: 100%;
     font-size:2vmax;
     outline: 1px solid Beige;
@@ -75,15 +74,18 @@ body {
 
 .srodek > #listaElementow {
     list-style-type: square;
+    max-width: 3px;
+
+    width: 50%;
+    padding:0;
+    margin: 3px -1px;
+    white-space: pre-line; 
 }
 
 
 
 li {
-    display:flex;
-    width:80%;
-    max-height: 500px;
-    word-wrap: break-word;
+    display:flex;   
 }
 
 
@@ -134,3 +136,4 @@ input::first-letter {
         
     }
 }
+
