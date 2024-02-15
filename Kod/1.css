@@ -168,8 +168,25 @@ input::first-letter {
 
 }
 
-@Media only screen and (max-width:2550px) {
+@Media only screen and (max-width:7000px) {
     button {
-        height:2vmax;
+        width:32%;
+        height: 25%;
+        font-size:30px;
+        margin-top:1%;
+    }
+
+    input {
+        height:20%;
+    }
+
+    input {
+        font-size:1vmax;
+    }
+
+    input[type="checkbox"] {
+        color:green;
+        width:10% !important;
+        height:10% !important;
     }
 }
