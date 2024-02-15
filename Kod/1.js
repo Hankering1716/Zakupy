@@ -1,4 +1,3 @@
-input.value = "FrFrFrFrFrFrFrFrFrFrFrFrFrFrFrFrFrFrFrFrFrFrFrFrFrFFrFrrFrFrFFrFrFrrFrFrFr"
 
 function Dodaj() {
     const button = document.createElement('button');
@@ -89,3 +88,11 @@ function DeleteTxt() {
 function Delete() {
     document.getElementById("listaElementow").innerHTML = "";
 }
+
+// window.onbeforeunload = function(e) {
+//     e = e || window.event;
+
+//     if(e) {
+//         e.returnValue = 'Sure?'
+//     };
+// }
