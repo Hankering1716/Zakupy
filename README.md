@@ -1,1 +1,1 @@
-Stronka która umożliwi tobie stworzenie listy zakup jaką tylko zachcesz!
+✉📤 By this app you can make grocery  list
